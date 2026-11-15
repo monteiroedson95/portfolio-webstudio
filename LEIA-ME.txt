@@ -1,2 +1,4 @@
-ETAPA 3 - NOSDE SITES
-Envie index.html e os quatro arquivos favicon para a RAIZ do repositorio GitHub. Substitua apenas index.html. Nao apague a pasta assets, config.js ou outros arquivos existentes.
+ETAPA 4 — NOSDE SITES
+Substitua apenas o index.html no repositorio GitHub.
+Os demais arquivos (assets, config.js, favicon) permanecem como estao.
+Mudanca: botao Solicitar orcamento da secao final em ciano, texto azul-marinho e hover suave.
