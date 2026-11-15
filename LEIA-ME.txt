@@ -1,0 +1,8 @@
+PORTFÓLIO WEB STUDIO V4
+
+1. Extraia o ZIP.
+2. Envie index.html, config.js e a pasta assets para a raiz do repositório portfolio-webstudio no GitHub.
+3. Ao atualizar, substitua o index.html antigo e mantenha os cinco arquivos .webp dentro de assets.
+4. A Vercel publicará automaticamente após o commit.
+
+WhatsApp configurado: +55 54 99996-1302.
