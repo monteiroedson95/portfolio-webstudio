@@ -1,5 +1,2 @@
-ETAPA 1 - CABECALHO NOSDE SITES
-
-No GitHub, substitua SOMENTE o index.html da raiz e envie assets/nosde-logo-horizontal.png para a pasta assets existente. NAO exclua as cinco imagens dos projetos que ja estao em assets.
-
-Esta etapa altera apenas a logo do cabecalho; restante do site permanece igual.
+ETAPA 3 - NOSDE SITES
+Envie index.html e os quatro arquivos favicon para a RAIZ do repositorio GitHub. Substitua apenas index.html. Nao apague a pasta assets, config.js ou outros arquivos existentes.
