@@ -1,8 +1,7 @@
-PORTFÓLIO WEB STUDIO — VERSÃO 2
+PORTFÓLIO WEB STUDIO - VERSÃO 3
 
-WhatsApp configurado: +55 54 99996-1302.
-1. Abra index.html no navegador para visualizar.
-2. Substitua a marca provisória Web Studio quando decidir o nome.
-3. Miniaturas são ilustrações provisórias, não capturas reais.
-4. Publique via GitHub + Vercel e teste os links e o botão de orçamento.
-5. Para alterar o WhatsApp, edite config.js.
+1. Envie index.html, config.js e pasta assets para a raiz do repositório GitHub.
+2. Para mostrar capturas reais, coloque arquivos PNG na pasta assets com nomes: uai.png, helena.png, dominio.png, ldm.png, montcruz.png.
+3. Sem as imagens, os cartões ilustrativos continuam funcionando automaticamente.
+4. WhatsApp configurado: +55 54 99996-1302.
+5. Após commit, a Vercel deve publicar a atualização automaticamente.
