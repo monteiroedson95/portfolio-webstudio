@@ -1,8 +1,5 @@
-PORTFÓLIO WEB STUDIO V4
+ETAPA 1 - CABECALHO NOSDE SITES
 
-1. Extraia o ZIP.
-2. Envie index.html, config.js e a pasta assets para a raiz do repositório portfolio-webstudio no GitHub.
-3. Ao atualizar, substitua o index.html antigo e mantenha os cinco arquivos .webp dentro de assets.
-4. A Vercel publicará automaticamente após o commit.
+No GitHub, substitua SOMENTE o index.html da raiz e envie assets/nosde-logo-horizontal.png para a pasta assets existente. NAO exclua as cinco imagens dos projetos que ja estao em assets.
 
-WhatsApp configurado: +55 54 99996-1302.
+Esta etapa altera apenas a logo do cabecalho; restante do site permanece igual.
