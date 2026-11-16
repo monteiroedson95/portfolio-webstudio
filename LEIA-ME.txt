@@ -1,4 +1,3 @@
-ETAPA 13 - NOSDE SITES
-Substitua somente o index.html no GitHub.
-Icones SVG e animacoes suaves adicionados apenas em Nosso Processo.
-Demais arquivos e secoes preservados.
+ETAPA 14 — NOSDE SITES
+Substitua somente index.html no GitHub.
+Os demais arquivos permanecem iguais.
