@@ -1,3 +1,1 @@
-ETAPA 17 - NOSDE SITES
-Substitua somente index.html no GitHub. Mantenha config.js e assets.
-O numero do WhatsApp vem de config.js quando configurado; caso contrario usa o numero existente no site.
+ETAPA 18 — Apenas o símbolo do WhatsApp foi substituído pelo ícone de marca branco, com encaixe ajustado. Substitua somente index.html no GitHub. Não altere config.js ou assets.
