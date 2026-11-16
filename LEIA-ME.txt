@@ -1,6 +1,4 @@
-NOSDE SITES - Etapa 9
-
-Substitua index.html na raiz do GitHub.
-Envie os cinco arquivos .webp desta pasta assets/ para a pasta assets/ do repositorio, substituindo as imagens antigas com o mesmo nome.
-NAO apague os outros arquivos de assets nem config.js.
-Nao ha videos nesta versao. Os cards permanecem clicaveis.
+NOSDE SITES - Etapa 11
+Substitua somente o index.html na raiz do repositorio GitHub.
+Mantem a centralizacao dos cards da etapa 10 e centraliza categorias, titulos, descricoes e botoes dentro dos cinco cards.
+Nenhuma imagem ou outro arquivo precisa ser alterado.
