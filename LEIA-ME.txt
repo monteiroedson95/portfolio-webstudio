@@ -1,7 +1,6 @@
-ETAPA 7 — Vídeo da Uai Lanches no notebook
+NOSDE SITES - Etapa 9
 
-No GitHub: substitua o index.html na raiz e envie o arquivo assets/uai-preview.mp4 para a pasta assets. NÃO apague os demais arquivos.
-
-O vídeo roda automaticamente, sem áudio, em loop, dentro do notebook da Uai Lanches. O card continua clicável. Outros projetos permanecem iguais.
-
-Se o navegador bloquear reprodução automática, a área poderá aparecer sem o vídeo; confirme no navegador após publicar.
+Substitua index.html na raiz do GitHub.
+Envie os cinco arquivos .webp desta pasta assets/ para a pasta assets/ do repositorio, substituindo as imagens antigas com o mesmo nome.
+NAO apague os outros arquivos de assets nem config.js.
+Nao ha videos nesta versao. Os cards permanecem clicaveis.
