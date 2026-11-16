@@ -1,4 +1,4 @@
-NOSDE SITES — Etapa 12
-Substitua apenas index.html no repositório GitHub.
-Mantidos projetos, imagens, links e identidade visual.
-Centralização dos textos nas seções, serviços, processo, contato e rodapé.
+ETAPA 13 - NOSDE SITES
+Substitua somente o index.html no GitHub.
+Icones SVG e animacoes suaves adicionados apenas em Nosso Processo.
+Demais arquivos e secoes preservados.
