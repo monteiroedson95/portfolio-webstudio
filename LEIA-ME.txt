@@ -1,1 +1,3 @@
-Etapa 15: substitua somente index.html no GitHub. Mantidos todos os demais elementos da Etapa 14.
+ETAPA 16 - NOSDE SITES
+Substitua somente index.html no GitHub. Preserve assets/ e config.js.
+Efeito: elementos surgem suavemente ao rolar a página. Respeita movimento reduzido.
