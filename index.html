@@ -85,6 +85,21 @@
 #servicos .service:hover .service-icon{transform:translateY(-3px) scale(1.06);background:#d1f6ff;box-shadow:0 9px 24px rgba(0,188,231,.18)}
 #servicos .service h3,#servicos .service p{text-align:center}
 @media(prefers-reduced-motion:reduce){#servicos .service,#servicos .service::before,#servicos .service-icon{transition:none!important}#servicos .service:hover,#servicos .service:hover .service-icon{transform:none!important}}
+
+/* Etapa 15 — movimento sutil exclusivamente na primeira dobra */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(115deg,#f7fbff 0%,#ffffff 48%,#eefaff 100%)}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:50%;filter:blur(5px);animation:nosdeFloat 12s ease-in-out infinite alternate}
+.hero::before{width:min(48vw,620px);height:min(48vw,620px);right:-13%;top:-42%;background:radial-gradient(circle,rgba(0,188,231,.16),rgba(0,188,231,0) 68%)}
+.hero::after{width:min(35vw,450px);height:min(35vw,450px);left:-14%;bottom:-52%;background:radial-gradient(circle,rgba(8,127,188,.11),rgba(8,127,188,0) 70%);animation-delay:-6s}
+.hero .eyebrow,.hero h1,.hero p,.hero .actions,.hero .hero-note{animation:nosdeEnter .75s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:.1s}.hero p{animation-delay:.2s}.hero .actions{animation-delay:.3s}.hero .hero-note{animation-delay:.4s}
+.hero h1 em{background:linear-gradient(105deg,#087fbc 20%,#00bce7 50%,#087fbc 80%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:nosdeShimmer 9s ease-in-out infinite}
+.hero .actions .btn{transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}
+.hero .actions .btn:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,30,56,.16)}
+@keyframes nosdeEnter{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+@keyframes nosdeFloat{from{transform:translate3d(0,0,0)}to{transform:translate3d(-35px,28px,0)}}
+@keyframes nosdeShimmer{0%,25%,100%{background-position:0% 50%}60%{background-position:100% 50%}}
+@media(prefers-reduced-motion:reduce){.hero::before,.hero::after,.hero .eyebrow,.hero h1,.hero p,.hero .actions,.hero .hero-note,.hero h1 em{animation:none!important}.hero .actions .btn:hover{transform:none}}
 </style></head><body>
 <header class="nav"><div class="container nav-inner"><a href="#inicio" class="logo nosde-brand" aria-label="NOSDE SITES — início"><img src="assets/nosde-logo-horizontal.png" alt="NOSDE SITES — Desenvolvimento Web" width="300" height="100"></a><nav class="nav-links"><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a></nav><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a></div></header>
 <main><section class="hero" id="inicio"><div class="container"><span class="eyebrow"><span class="dot"></span> Criação de sites profissionais</span><h1>Seu negócio merece um site <em>à altura.</em></h1><p>Desenvolvemos experiências digitais modernas, rápidas e personalizadas para transmitir confiança e transformar visitantes em oportunidades.</p><div class="actions"><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Quero um site profissional ↗</a><a class="btn secondary" href="#projetos">Conhecer projetos ↓</a></div><div class="hero-note">Design personalizado &nbsp;·&nbsp; Adaptado para celular &nbsp;·&nbsp; Atendimento próximo</div></div></section>

@@ -1,3 +1,1 @@
-ETAPA 14 — NOSDE SITES
-Substitua somente index.html no GitHub.
-Os demais arquivos permanecem iguais.
+Etapa 15: substitua somente index.html no GitHub. Mantidos todos os demais elementos da Etapa 14.
