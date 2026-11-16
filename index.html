@@ -193,6 +193,39 @@ footer.nosde-footer{background:#0b1e38;color:#c4d4e4;border-top:1px solid #1c456
 @media(max-width:800px){.nosde-footer .footer-main{grid-template-columns:1fr 1fr;gap:34px}.nosde-footer .footer-main>div:first-child{grid-column:1/-1}}
 @media(max-width:480px){.nosde-footer .footer-main{grid-template-columns:1fr;gap:32px;padding:48px 0 35px}.nosde-footer .footer-main>div:first-child{grid-column:auto}.nosde-footer .footer-bottom-inner{justify-content:center;text-align:center}}
 @media(prefers-reduced-motion:reduce){.nosde-footer .footer-links a,.nosde-footer .footer-contact{transition:none}.nosde-footer .footer-contact:hover{transform:none}}
+</style><style>
+/* Etapa 23: carrosseis exclusivos para celular. Desktop permanece inalterado. */
+.mobile-carousel-controls{display:none}
+@media(max-width:800px){
+  #projetos .projects,#servicos .services,#beneficios .benefits,#diferenciais .diff-grid,#processo .steps{
+    display:flex!important;flex-wrap:nowrap!important;gap:14px!important;
+    overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;
+    scroll-padding-inline:2px;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;padding:8px 2px 22px!important;margin-inline:0!important;
+    max-width:100%!important;align-items:stretch;
+  }
+  #projetos .projects::-webkit-scrollbar,#servicos .services::-webkit-scrollbar,#beneficios .benefits::-webkit-scrollbar,#diferenciais .diff-grid::-webkit-scrollbar,#processo .steps::-webkit-scrollbar{display:none}
+  #projetos .projects>.project,#servicos .services>.service,#beneficios .benefits>.benefit,#diferenciais .diff-grid>.diff-card,#processo .steps>.step{
+    flex:0 0 calc(100% - 4px)!important;width:calc(100% - 4px)!important;
+    min-width:0!important;max-width:none!important;grid-column:auto!important;
+    scroll-snap-align:start;scroll-snap-stop:always;margin:0!important;
+  }
+  #projetos .projects>.project:last-child:nth-child(odd){width:calc(100% - 4px)!important}
+  .mobile-carousel-controls{display:flex;align-items:center;justify-content:center;gap:15px;margin:0 auto 8px}
+  .mobile-carousel-arrow{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid #c9e7f1;background:white;color:#087fbc;cursor:pointer;font-size:23px;line-height:1;transition:background .2s}
+  .mobile-carousel-arrow:disabled{opacity:.3;cursor:default}
+  .mobile-carousel-arrow:not(:disabled):active{background:#e2f8ff}
+  .mobile-carousel-dots{display:flex;align-items:center;justify-content:center;gap:7px}
+  .mobile-carousel-dot{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:#b6cbd8;transition:width .2s,background .2s}
+  .mobile-carousel-dot[aria-current="true"]{width:22px;border-radius:6px;background:#087fbc}
+  #projetos .project:hover,#servicos .service:hover,#beneficios .benefit:hover,#diferenciais .diff-card:hover,#processo .step:hover{transform:none!important}
+}
+@media(max-width:480px){
+  #projetos .project-visual{height:200px}
+  #servicos .service,#beneficios .benefit,#diferenciais .diff-card{padding:25px 19px!important}
+  #processo .step{padding:23px 18px!important}
+}
+@media(prefers-reduced-motion:reduce){.mobile-carousel-dot,.mobile-carousel-arrow{transition:none}}
 </style></head><body>
 <header class="nav"><div class="container nav-inner"><a href="#inicio" class="logo nosde-brand" aria-label="NOSDE SITES — início"><img src="assets/nosde-logo-horizontal.png" alt="NOSDE SITES — Desenvolvimento Web" width="300" height="100"></a><nav class="nav-links"><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a></nav><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a></div></header>
 <main><section class="hero" id="inicio"><div class="container"><span class="eyebrow"><span class="dot"></span> Criação de sites profissionais</span><h1>Seu negócio merece um site <em>à altura.</em></h1><p>Desenvolvemos experiências digitais modernas, rápidas e personalizadas para transmitir confiança e transformar visitantes em oportunidades.</p><div class="actions"><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Quero um site profissional ↗</a><a class="btn secondary" href="#projetos">Conhecer projetos ↓</a></div><div class="hero-note">Design personalizado &nbsp;·&nbsp; Adaptado para celular &nbsp;·&nbsp; Atendimento próximo</div></div></section>
@@ -260,4 +293,42 @@ footer.nosde-footer{background:#0b1e38;color:#c4d4e4;border-top:1px solid #1c456
  const url='https://wa.me/'+number+'?text='+encodeURIComponent(msg);
  document.querySelectorAll('a[href*="wa.me/"],#contact-link,#whatsapp-float').forEach(function(a){a.href=url;a.target='_blank';a.rel='noopener noreferrer';});
 })();
-</script></body></html>
+</script>
+<script>
+/* Etapa 23: navegacao por toque, setas e pontos nos cinco carrosseis mobile. */
+(()=>{
+ const targets=[['#projetos .projects','Portfólio'],['#servicos .services','Serviços'],['#beneficios .benefits','Benefícios'],['#diferenciais .diff-grid','Diferenciais'],['#processo .steps','Nosso processo']];
+ const mobile=window.matchMedia('(max-width: 800px)');
+ targets.forEach(([selector,name])=>{
+   const track=document.querySelector(selector);
+   if(!track)return;
+   const cards=Array.from(track.children);
+   if(cards.length<2)return;
+   track.setAttribute('aria-label',name+' — deslize para ver mais');
+   const controls=document.createElement('div');controls.className='mobile-carousel-controls';
+   controls.setAttribute('aria-label','Navegação do carrossel '+name);
+   const prev=document.createElement('button');prev.type='button';prev.className='mobile-carousel-arrow';prev.textContent='‹';prev.setAttribute('aria-label','Card anterior de '+name);
+   const next=document.createElement('button');next.type='button';next.className='mobile-carousel-arrow';next.textContent='›';next.setAttribute('aria-label','Próximo card de '+name);
+   const dots=document.createElement('div');dots.className='mobile-carousel-dots';
+   const buttons=cards.map((card,i)=>{
+     const dot=document.createElement('button');dot.type='button';dot.className='mobile-carousel-dot';dot.setAttribute('aria-label','Ir para card '+(i+1)+' de '+cards.length);
+     dot.addEventListener('click',()=>go(i));dots.appendChild(dot);return dot;
+   });
+   controls.append(prev,dots,next);track.insertAdjacentElement('afterend',controls);
+   const current=()=>{
+     const first=cards[0].offsetLeft;
+     let best=0,dist=Infinity;
+     cards.forEach((card,i)=>{const d=Math.abs(card.offsetLeft-first-track.scrollLeft);if(d<dist){dist=d;best=i;}});
+     return best;
+   };
+   const go=(i)=>{if(!mobile.matches)return;const idx=Math.max(0,Math.min(cards.length-1,i));
+     track.scrollTo({left:cards[idx].offsetLeft-cards[0].offsetLeft,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+   };
+   const update=()=>{const i=current();buttons.forEach((b,j)=>b.setAttribute('aria-current',String(i===j)));prev.disabled=i===0;next.disabled=i===cards.length-1;};
+   prev.addEventListener('click',()=>go(current()-1));next.addEventListener('click',()=>go(current()+1));
+   let raf=false;track.addEventListener('scroll',()=>{if(raf)return;raf=true;requestAnimationFrame(()=>{raf=false;update();});},{passive:true});
+   window.addEventListener('resize',update,{passive:true});update();
+ });
+})();
+</script>
+</body></html>
