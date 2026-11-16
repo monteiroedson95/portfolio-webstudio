@@ -226,8 +226,39 @@ footer.nosde-footer{background:#0b1e38;color:#c4d4e4;border-top:1px solid #1c456
   #processo .step{padding:23px 18px!important}
 }
 @media(prefers-reduced-motion:reduce){.mobile-carousel-dot,.mobile-carousel-arrow{transition:none}}
-</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"NOSDE SITES","url":"https://nosdesites.vercel.app/","description":"Criação de sites profissionais, landing pages e soluções digitais personalizadas para empresas.","image":"https://nosdesites.vercel.app/assets/nosde-logo-horizontal.png","inLanguage":"pt-BR","hasOfferCatalog":{"@type":"OfferCatalog","name":"Serviços de desenvolvimento web","itemListElement":[{"@type":"OfferCatalog","name":"Landing pages"},{"@type":"OfferCatalog","name":"Sites institucionais"},{"@type":"OfferCatalog","name":"Projetos personalizados"}]}}</script></head><body>
-<header class="nav"><div class="container nav-inner"><a href="#inicio" class="logo nosde-brand" aria-label="NOSDE SITES — início"><img src="assets/nosde-logo-horizontal.png" alt="NOSDE SITES — Desenvolvimento Web" width="300" height="100"></a><nav class="nav-links"><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a></nav><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a></div></header>
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"NOSDE SITES","url":"https://nosdesites.vercel.app/","description":"Criação de sites profissionais, landing pages e soluções digitais personalizadas para empresas.","image":"https://nosdesites.vercel.app/assets/nosde-logo-horizontal.png","inLanguage":"pt-BR","hasOfferCatalog":{"@type":"OfferCatalog","name":"Serviços de desenvolvimento web","itemListElement":[{"@type":"OfferCatalog","name":"Landing pages"},{"@type":"OfferCatalog","name":"Sites institucionais"},{"@type":"OfferCatalog","name":"Projetos personalizados"}]}}</script><style>
+/* Etapa 25: menu de navegacao e refinamentos SOMENTE mobile */
+.nosde-menu-toggle,.nosde-mobile-menu{display:none}
+@media(max-width:800px){
+ .nav{z-index:50}
+ .nav-inner{gap:10px}
+ .nosde-menu-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;order:3;flex:none;width:42px;height:42px;padding:8px;border:1px solid #d6e6ee;border-radius:11px;background:#f4fbff;cursor:pointer}
+ .nosde-menu-toggle span{display:block;width:21px;height:2px;background:#0b1e38;border-radius:3px;transition:transform .2s,opacity .2s}
+ .nosde-menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(7px) rotate(45deg)}
+ .nosde-menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+ .nosde-menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-7px) rotate(-45deg)}
+ .nosde-menu-toggle:focus-visible,.nosde-mobile-menu a:focus-visible{outline:3px solid #087fbc;outline-offset:2px}
+ .nosde-mobile-menu{display:block;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #dce8f0;box-shadow:0 15px 28px #0b1e3820;visibility:hidden;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s,visibility .2s;max-height:calc(100dvh - 68px);overflow-y:auto}
+ .nosde-mobile-menu.is-open{visibility:visible;opacity:1;transform:translateY(0);pointer-events:auto}
+ .nosde-mobile-menu-inner{display:flex;flex-direction:column;padding-top:12px;padding-bottom:18px;text-align:left}
+ .nosde-mobile-menu-inner>a{display:flex;align-items:center;min-height:45px;padding:11px 8px;border-bottom:1px solid #edf2f6;color:#0b1e38;font-weight:700;font-size:14px}
+ .nosde-mobile-menu-inner>a:active{background:#eefaff}
+ .nosde-mobile-menu-inner>.nosde-mobile-menu-cta{justify-content:center;margin-top:13px;background:#00bce7;border:0;border-radius:10px;color:#0b1e38}
+ .section{padding-top:56px;padding-bottom:56px}
+ .section-sub{margin-bottom:26px}
+ .mobile-carousel-controls{margin-top:0;margin-bottom:0}
+ .wa-invite.nosde-invite-hidden{opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s}
+ html{scroll-padding-top:85px}
+}
+@media(max-width:480px){
+ .nav-inner>.btn{padding:10px 9px;font-size:11px;white-space:nowrap}
+ .nosde-brand img{width:118px;height:48px}
+ .nosde-menu-toggle{width:38px;height:38px}
+ .section{padding-top:50px;padding-bottom:50px}
+}
+@media(prefers-reduced-motion:reduce){.nosde-mobile-menu,.nosde-menu-toggle span{transition:none!important}}
+</style></head><body>
+<header class="nav"><div class="container nav-inner"><a href="#inicio" class="logo nosde-brand" aria-label="NOSDE SITES — início"><img src="assets/nosde-logo-horizontal.png" alt="NOSDE SITES — Desenvolvimento Web" width="300" height="100"></a><nav class="nav-links"><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a></nav><button class="nosde-menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nosde-mobile-menu"><span></span><span></span><span></span></button><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a></div><nav id="nosde-mobile-menu" class="nosde-mobile-menu" aria-label="Menu principal mobile" inert><div class="container nosde-mobile-menu-inner"><a href="#inicio">Início</a><a href="#projetos">Portfólio</a><a href="#servicos">Serviços</a><a href="#beneficios">Por que ter um site?</a><a href="#diferenciais">Diferenciais NOSDE</a><a href="#processo">Nosso processo</a><a href="#faq">Dúvidas frequentes</a><a class="nosde-mobile-menu-cta" href="https://wa.me/5554999961302" target="_blank" rel="noopener noreferrer">Solicitar orçamento ↗</a></div></nav></header>
 <main><section class="hero" id="inicio"><div class="container"><span class="eyebrow"><span class="dot"></span> Criação de sites profissionais</span><h1>Seu negócio merece um site <em>à altura.</em></h1><p>Desenvolvemos experiências digitais modernas, rápidas e personalizadas para transmitir confiança e transformar visitantes em oportunidades.</p><div class="actions"><a class="btn" href="https://wa.me/5554999961302?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20cria%C3%A7%C3%A3o%20de%20site." target="_blank" rel="noopener noreferrer">Quero um site profissional ↗</a><a class="btn secondary" href="#projetos">Conhecer projetos ↓</a></div><div class="hero-note">Design personalizado &nbsp;·&nbsp; Adaptado para celular &nbsp;·&nbsp; Atendimento próximo</div></div></section>
 <section class="section" id="projetos"><div class="container"><span class="eyebrow">Portfólio</span><h2 class="section-title">Projetos que falam por nós.</h2><p class="section-sub">De sites institucionais a plataformas com gestão de conteúdo e pedidos. Conheça alguns dos projetos desenvolvidos.</p><div class="projects">
 <article class="project"><a class="project-card-link" href="https://uai-lanches.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Uai Lanches em nova aba"></a><div class="project-visual" style="background:linear-gradient(135deg,#204d34,#91bd61)"><div class="laptop"><div class="laptop-screen"><img src="assets/uai.webp" alt="Captura real do site uai" loading="lazy" width="1440" height="660" decoding="async"></div><div class="laptop-base"></div></div></div><div class="project-info"><span class="tag">Cardápio digital e pedidos</span><h3>Uai Lanches</h3><p>Experiência de pedidos online com cardápio digital e recursos de administração.</p><a class="link" href="https://uai-lanches.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar projeto ↗</a></div></article>
@@ -329,6 +360,30 @@ footer.nosde-footer{background:#0b1e38;color:#c4d4e4;border-top:1px solid #1c456
    let raf=false;track.addEventListener('scroll',()=>{if(raf)return;raf=true;requestAnimationFrame(()=>{raf=false;update();});},{passive:true});
    window.addEventListener('resize',update,{passive:true});update();
  });
+})();
+</script>
+
+<script>
+/* Etapa 25: menu mobile acessivel e convite WhatsApp discreto */
+(()=>{
+ const toggle=document.querySelector('.nosde-menu-toggle');
+ const menu=document.getElementById('nosde-mobile-menu');
+ if(!toggle||!menu)return;
+ const mobile=window.matchMedia('(max-width:800px)');
+ const setOpen=open=>{
+   const active=Boolean(open&&mobile.matches);
+   toggle.setAttribute('aria-expanded',String(active));
+   toggle.setAttribute('aria-label',active?'Fechar menu':'Abrir menu');
+   menu.classList.toggle('is-open',active);
+   menu.inert=!active;
+ };
+ toggle.addEventListener('click',()=>setOpen(toggle.getAttribute('aria-expanded')!=='true'));
+ menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true'){setOpen(false);toggle.focus();}});
+ document.addEventListener('click',e=>{if(toggle.getAttribute('aria-expanded')==='true'&&!e.target.closest('.nav'))setOpen(false);});
+ window.addEventListener('resize',()=>setOpen(false),{passive:true});
+ const invite=document.querySelector('.wa-invite');
+ if(invite&&mobile.matches){window.setTimeout(()=>invite.classList.add('nosde-invite-hidden'),5500);}
 })();
 </script>
 </body></html>
