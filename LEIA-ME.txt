@@ -1,32 +1,7 @@
-NOSDE SITES — ETAPA 6
+ETAPA 7 — Vídeo da Uai Lanches no notebook
 
-O QUE FUNCIONA AGORA
-- Os 5 cards inteiros abrem o site correspondente em uma nova aba.
-- O link Visitar projeto continua funcionando.
-- Ao passar o mouse sobre um card, a captura rola suavemente SE houver uma captura longa.
-- As imagens atuais continuam como fallback caso a captura completa ainda nao exista.
+No GitHub: substitua o index.html na raiz e envie o arquivo assets/uai-preview.mp4 para a pasta assets. NÃO apague os demais arquivos.
 
-COMO PUBLICAR AGORA
-1. Envie SOMENTE o index.html para a raiz do repositorio GitHub.
-2. Nao apague a pasta assets, o config.js, as logos nem os favicons.
-3. Confirme o commit e aguarde a Vercel.
+O vídeo roda automaticamente, sem áudio, em loop, dentro do notebook da Uai Lanches. O card continua clicável. Outros projetos permanecem iguais.
 
-COMO ATIVAR A ROLAGEM COMPLETA DE CADA PROJETO
-Capture a pagina inteira (full-page screenshot) de cada site e salve como WebP.
-Envie os arquivos para a pasta assets com EXATAMENTE estes nomes:
-- uai-full.webp
-- helena-full.webp
-- dominio-full.webp
-- ldm-full.webp
-- montcruz-full.webp
-
-Nao e necessario alterar o HTML novamente: quando esses arquivos existirem,
-a pagina os carregara automaticamente. A captura deve ter a largura de
-uma tela desktop (por exemplo 1440 px) e altura total da pagina.
-
-IMPORTANTE
-Este ZIP NAO inclui capturas completas porque elas nao foram fornecidas,
-e o ambiente nao conseguiu acessar os sites externos para captura automatica.
-Enquanto isso, a imagem existente permanece estatica, sem rolagem falsa.
-A rolagem por hover e destinada principalmente ao desktop; no celular,
-o card continua clicavel e a imagem permanece visivel.
+Se o navegador bloquear reprodução automática, a área poderá aparecer sem o vídeo; confirme no navegador após publicar.
