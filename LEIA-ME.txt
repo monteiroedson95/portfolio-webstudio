@@ -1,7 +1,6 @@
-NOSDE SITES — Etapa 4
+NOSDE SITES — Atualização do briefing
 
-Adicione a pasta briefing à raiz do repositório portfolio-webstudio, ao lado de index.html e assets.
-Não substitua o index.html principal.
-O formulário é uma demonstração: baixa as respostas como TXT; NÃO envia nem salva dados em servidor.
-Depois do commit, acesse https://nosdesites.pages.dev/briefing/
-A logo é carregada de ../assets/nosde-logo-horizontal.png, que deve existir no repositório.
+Substitua apenas briefing/index.html no repositório portfolio-webstudio.
+Não substitua o index.html da raiz.
+A página envia POST para /api/briefing e exige a função e o binding DB previamente publicados.
+Antes de usar com clientes reais, configure proteção anti-spam, política de privacidade e testes de segurança.
