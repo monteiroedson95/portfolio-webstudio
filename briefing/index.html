@@ -6,12 +6,16 @@ formulario.addEventListener('submit', async (evento) => {
   evento.preventDefault();
   if (!formulario.reportValidity()) return;
   const campos = Object.fromEntries(new FormData(formulario).entries());
+  // O token do Turnstile e o campo antispam nao fazem parte das respostas do briefing.
+  const respostas = Object.fromEntries(
+    Object.entries(campos).filter(([nome]) => nome !== 'cf-turnstile-response' && nome !== 'website')
+  );
   const dados = {
     empresa: campos['Empresa'],
     responsavel: campos['Responsável'],
     whatsapp: campos['WhatsApp'],
     email: campos['E-mail'] || '',
-    respostas: campos,
+    respostas,
     website: formulario.querySelector('#website').value,
     turnstileToken: formulario.querySelector('[name="cf-turnstile-response"]')?.value || ''
   };
